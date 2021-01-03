@@ -1,4 +1,4 @@
-package com.apolloarts
+package com.apolloarts.basic
 
 fun main() {
     println("Hello Kotlin")
