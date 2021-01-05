@@ -105,6 +105,7 @@ class Solution {
             counter++
         }
 
+        // For handling last group of chars
         if (counter > 0) {
             chars[length++] = chars[charsSize - 1]
             if (counter > 1) {
@@ -133,11 +134,14 @@ fun main() {
 
     val input3 = charArrayOf('a', 'a', 'b', 'b', 'c', 'c', 'c')
 
+    val input4 = charArrayOf('a', 'b', 'b', 'a', 'a')
+
     val solution = Solution()
 
     println("${solution.compress(input1)}")  // 4
     println("${solution.compress(input2)}") // 6
     println("${solution.compress(input3)}") // 6
     println("${solution.compress2(input3)}") // 6
+    println("${solution.compress2(input4)}")
     solution.test()
 }
